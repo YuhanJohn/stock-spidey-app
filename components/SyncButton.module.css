@@ -1,0 +1,22 @@
+.main {
+  width: min-content;
+  font-size: 1rem;
+  margin-left: 8px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: #ffffff;
+  background-color: #f6a82b;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.main img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.main:hover {
+  opacity: 0.75;
+}

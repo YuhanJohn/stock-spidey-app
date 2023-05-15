@@ -18,5 +18,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^17.1.2"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "puppeteer": "^13.5.1"
   }
 }

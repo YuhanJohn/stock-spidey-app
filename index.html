@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Moneybook Desktop App</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <img class="main-logo" src="./moneybook_logo.png" alt="moneybook" />
+    <!-- <h1>Moneybook Desktop App</h1> -->
 
+    <!-- We are using Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, and Electron
+    <span id="electron-version"></span>. -->
+
+    <div id="res"></div>
+    <button class="main"><img src="./Sync.png" alt="同步" /> 同步</button>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <style>
+      .main-logo {
+        margin-bottom: 16px;
+      }
+      .main {
+        width: min-content;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 24px;
+        color: #ffffff;
+        background-color: #f6a82b;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        border: none;
+      }
+      .main img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+      .main:hover {
+        opacity: 0.75;
+      }
+    </style>
   </body>
 </html>
